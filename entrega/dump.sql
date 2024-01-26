@@ -40,18 +40,7 @@ GROUP BY marca, ano
 ORDER BY marca, ano;
 
 
---  verificar esse  Quais marcas geraram uma receita maior com número menor de vendas?
-
-SELECT marca, SUM(vendas) AS total_de_vendas, SUM(valor_do_veiculo) AS receita_total
-FROM tabela_unificada
-GROUP BY marca
-ORDER BY receita_total DESC, total_de_vendas ASC;
---
-
-SELECT marca, SUM(vendas) AS total_de_vendas, SUM(valor_do_veiculo) AS receita_total
-FROM unify_table
-GROUP BY marca
-ORDER BY receita_total DESC, total_de_vendas ASC;
+--  Quais marcas geraram uma receita maior com número menor de vendas?
 
 SELECT marca, SUM(vendas) AS total_de_vendas, SUM(valor_do_veiculo) AS receita_total
 FROM unify_table

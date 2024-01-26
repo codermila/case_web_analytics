@@ -45,7 +45,7 @@ async function corrigirNomes() {
             }
         }
 
-        return registros;  // Retorna os registros corrigidos
+        return registros;
     } catch (error) {
         console.error('Erro ao corrigir os nomes:', error);
         throw error;
@@ -69,7 +69,7 @@ async function corrigirVendas() {
             }
         }
 
-        return registros;  // Retorna os registros corrigidos
+        return registros;
     } catch (error) {
         console.error('Erro ao corrigir as vendas:', error);
         throw error;
